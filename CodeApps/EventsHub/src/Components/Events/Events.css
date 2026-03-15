@@ -1,0 +1,38 @@
+/* Loading state */
+.events-loading-container {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Error state */
+.events-error-container {
+    padding-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+.events-error-message {
+    color: red;
+    font-size: 16px;
+}
+
+/* Empty state */
+.events-empty-container {
+    padding-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+.events-empty-message {
+    font-size: 16px;
+}
+
+/* Events container */
+.events-container {
+    padding-top: 80px;
+} 
+
+ 

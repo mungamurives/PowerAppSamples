@@ -1,0 +1,289 @@
+.eventCard {
+    padding: 20px;
+    margin: 8px;
+    border-radius: 8px;
+    height: 300px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.15);
+}
+
+.standardMargin {
+    margin: 8px 0px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+} 
+
+.cardDescription {
+    font-size: 14px;
+    height: 60px;
+    overflow: hidden;
+    min-height: 40px;
+}
+
+.cardDate {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Event Type Tag Styles */
+.event-type-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+} 
+
+ 
+
+.event-type-virtual { 
+
+    background-color: rgba(25, 124, 128, 0.15); 
+
+    color: #197c80; 
+
+} 
+
+ 
+
+.event-type-in-person { 
+
+    background-color: rgba(254, 127, 45, 0.15); 
+
+    color: #FE7F2D; 
+
+} 
+
+ 
+
+/* Location Styles */ 
+
+.location-virtual-link { 
+
+    color: #197c80; 
+
+    font-size: 14px; 
+
+    font-weight: 500; 
+
+    display: flex; 
+
+    align-items: center; 
+
+    gap: 6px; 
+
+    text-decoration: none; 
+
+} 
+
+ 
+
+.location-virtual-link:hover { 
+
+    color: #197c80; 
+
+    text-decoration: none; 
+
+} 
+
+ 
+
+.location-in-person { 
+
+    font-size: 14px; 
+
+    display: flex; 
+
+    align-items: center; 
+
+    gap: 6px; 
+
+} 
+
+ 
+
+/* Date Section Styles */ 
+
+.date-container { 
+
+    display: flex; 
+
+    align-items: center; 
+
+    gap: 8px; 
+
+    font-size: 14px; 
+
+} 
+
+ 
+
+.date-icon { 
+
+    font-size: 18px; 
+
+} 
+
+ 
+
+/* Button Container */ 
+
+.button-container { 
+
+    margin-top: 30px; 
+
+    display: flex; 
+
+    justify-content: space-between; 
+
+    align-items: center; 
+
+} 
+
+ 
+
+/* More Details Button */ 
+
+.more-details-button { 
+
+    width: 150px; 
+
+    padding: 10px; 
+
+    background-color: #197c80; 
+
+    color: white; 
+
+    border: none; 
+
+    border-radius: 6px; 
+
+    font-size: 14px; 
+
+    font-weight: 600; 
+
+    cursor: pointer; 
+
+    transition: all 0.2s ease; 
+
+} 
+
+ 
+
+.more-details-button:hover { 
+
+    background-color: #166b6f !important; 
+
+    transform: translateY(-2px); 
+
+    box-shadow: 0 4px 12px rgba(25, 124, 128, 0.3); 
+
+} 
+
+ 
+
+/* Download Button */ 
+
+.download-button { 
+
+    /* width: 40px; */ 
+
+    height: 40px; 
+
+    background-color: transparent; 
+
+    border: 2px solid #197c80; 
+
+    border-radius: 6px; 
+
+    cursor: pointer; 
+
+    display: flex; 
+
+    align-items: center; 
+
+    justify-content: center; 
+
+    transition: all 0.2s ease; 
+
+} 
+
+button:hover { 
+
+    border-color: #197c80 !important; 
+
+} 
+
+.download-button:hover { 
+
+    /* background-color: rgba(25, 124, 128, 0.1); */ 
+
+     background-color: transparent !important; 
+
+} 
+
+ 
+
+.download-icon { 
+
+    width: 20px; 
+
+    height: 20px; 
+
+    color: #197c80; 
+
+    display: block; 
+
+} 
+
+ 
+
+.calendar-icon { 
+
+    width: 18px; 
+
+    height: 18px; 
+
+    color: #555; 
+
+} 
+
+ 
+
+.location-icon { 
+
+    width: 20px; 
+
+    height: 20px; 
+
+    color: #555; 
+
+} 
+
+ 
+
+.external-link-icon { 
+
+    width: 18px; 
+
+    height: 18px; 
+
+    color: #197c80; 
+
+} 
+
+ 
+
+.icon-container { 
+
+    display: flex; 
+
+    align-items: center; 
+
+    gap: 5px; 
+
+} 

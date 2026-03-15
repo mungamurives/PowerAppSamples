@@ -1,0 +1,186 @@
+.banner-container {
+    width: 100%;
+    height: 60vh;
+    margin-top: 0;
+    /* Remove top margin so header overlays on banner */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 124, 128, 0.6);
+    /* Darker version of #197c80 with 60% opacity */
+    z-index: 1;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.banner-main-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.7); */
+    line-height: 1.1;
+}
+
+.banner-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.developer-credit {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Event-specific styles for left-aligned content */
+.banner-content-event {
+    color: white;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.banner-event-title {
+    font-size: 24px;
+}
+
+.banner-event-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.4;
+    max-width: 700px;
+}
+
+/* Enhanced developer credit for event pages */
+.developer-credit-event {
+    background: rgba(0, 0, 0, 0.8) !important;
+    z-index: 10 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .banner-main-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1rem;
+    }
+
+    .developer-credit {
+        bottom: 10px;
+        right: 15px;
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    /* Mobile styles for event content */
+    .banner-content-event {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 80px;
+    }
+
+    .banner-event-title {
+        font-size: 24px;
+    }
+
+    .banner-event-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* Button styles */
+.banner-button-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.banner-back-button {
+    padding: 14px 28px;
+    background: rgba(240, 240, 240, 0.95);
+    color: #333;
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.banner-back-button:hover {
+    background: rgba(220, 220, 220, 0.95);
+    border: 1px solid rgba(180, 180, 180, 0.8);
+    transform: translateY(-2px);
+}
+
+.banner-register-button {
+    padding: 14px 28px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.banner-register-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-2px);
+}
+
+.banner-register-button-registered {
+    padding: 14px 28px;
+    background: rgba(34, 139, 34, 0.8);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: not-allowed;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    opacity: 0.8;
+} 

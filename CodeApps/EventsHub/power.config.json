@@ -1,0 +1,67 @@
+{
+  "appId": "e2e25e1a-c6c0-4264-817e-1adfc87255d4",
+  "appDisplayName": "eventsHub",
+  "description": null,
+  "environmentId": "4032ef79-7e95-eddd-ab3c-780b83cd0a05",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000/",
+  "connectionReferences": {
+    "b4b6fcaf-72a7-4736-9a41-b7a1d7a3e072": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "authenticationType": null,
+      "sharedConnectionId": null,
+      "dataSets": {}
+    },
+    "80a9d9b6-bfc3-4230-8522-72d355b15de8": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "codeapps_eventdocuments",
+        "imagelibrary"
+      ],
+      "authenticationType": null,
+      "sharedConnectionId": null,
+      "dataSets": {
+        "https%253A%252F%252Fo365produ.sharepoint.com%252Fsites%252FYoutubeContent": {
+          "dataSources": {
+            "codeapps_eventdocuments": {
+              "tableName": "5e5c4366-40d9-413a-ba4a-6975a77861f1"
+            },
+            "imagelibrary": {
+              "tableName": "ea1187db-1b41-4867-8e67-ac10326f53a1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "databaseDetails": null,
+      "dataSources": {
+        "codeapps_eventdetails": {
+          "entitySetName": "crb5a_codeapps_eventdetailses",
+          "logicalName": "crb5a_codeapps_eventdetails",
+          "isHidden": false
+        },
+        "crb5a_codeapps_eventregistrations": {
+          "entitySetName": "crb5a_codeapps_eventregistrations",
+          "logicalName": "crb5a_codeapps_eventregistration",
+          "isHidden": false
+        },
+        "crb5a_codeapps_eventdetailses": {
+          "entitySetName": "crb5a_codeapps_eventdetailses",
+          "logicalName": "crb5a_codeapps_eventdetails",
+          "isHidden": false
+        }
+      },
+      "actions": null
+    }
+  }
+}

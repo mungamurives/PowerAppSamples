@@ -1,0 +1,137 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
+/* Custom typography classes */
+.mainHeader_bold {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.mainHeader {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: inherit;
+}
+
+.subHeader_bold {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.subHeader {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: inherit;
+}
+
+.description {
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.standardMargin {
+  margin: 4px 0;
+}
+
+/* Color classes */
+.primaryBackgroundColor {
+  background-color: #BA68C8;
+}
+
+/* Fabric Core Grid System */
+.ms-Grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ms-Grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ms-Grid-col {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+/* Default - Small screens - 1 card per row */
+.ms-sm12 {
+  flex: 0 0 100% !important;
+}
+
+.ms-md6 {
+  flex: 0 0 100% !important;
+}
+
+.ms-lg3 {
+  flex: 0 0 100% !important;
+}
+
+.ms-lg4 {
+  flex: 0 0 100% !important;
+}
+
+.ms-xl2 {
+  flex: 0 0 100% !important;
+}
+
+.ms-xl4 {
+  flex: 0 0 100% !important;
+}
+
+/* Medium screens and up - 2 cards per row */
+@media (min-width: 640px) {
+  .ms-md6 {
+    flex: 0 0 50% !important;
+  }
+  .ms-lg3 {
+    flex: 0 0 50% !important;
+  }
+  .ms-lg4 {
+    flex: 0 0 50% !important;
+  }
+  .ms-xl2 {
+    flex: 0 0 50% !important;
+  }
+  .ms-xl4 {
+    flex: 0 0 50% !important;
+  }
+}
+
+/* Large screens and up - 3 cards per row */
+@media (min-width: 768px) {
+  .ms-lg3 {
+    flex: 0 0 33.333333% !important;
+  }
+  .ms-lg4 {
+    flex: 0 0 33.333333% !important;
+  }
+  .ms-xl2 {
+    flex: 0 0 33.333333% !important;
+  }
+  .ms-xl4 {
+    flex: 0 0 33.333333% !important;
+  }
+}
+
+/* Extra Large screens and up - 3 cards per row (maintained) */
+@media (min-width: 1440px) {
+  .ms-xl2 {
+    flex: 0 0 16.666667% !important;
+  }
+  .ms-xl4 {
+    flex: 0 0 33.333333% !important;
+  }
+} 

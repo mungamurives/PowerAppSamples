@@ -1,0 +1,100 @@
+.header-container {
+    padding: 8px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.header-container.scrolled {
+    background-color: rgba(20, 30, 32, 0.7);
+    backdrop-filter: blur(6px);
+}
+
+.header-container.not-scrolled {
+    background-color: transparent;
+    backdrop-filter: none;
+}
+
+.error-message {
+    color: red;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin: 0px 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link.inactive:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link.inactive {
+    background-color: transparent;
+}
+
+.nav-link.not-scrolled {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link.scrolled {
+    text-shadow: none;
+}
+
+.user-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0px 20px;
+}
+
+.user-profile-image.not-scrolled {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.user-profile-image.scrolled {
+    border: none;
+}
